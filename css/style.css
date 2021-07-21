@@ -1,0 +1,277 @@
+/* Styling for Hamburger Menu */
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header{
+  border-bottom: 1px solid #ffffff;
+  background-color: #3d405b;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.nav-link:hover{
+  color: #81b29a;
+}
+
+
+
+/* Start of original styling */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #f4f1de;
+  font-size: 18px;
+
+}
+
+h1 {
+
+  color: #3d405b;
+  font-size: 100px;
+  text-align: center;
+}
+
+h2 {
+  padding: 10px;
+  background-color: #e07a5f;
+  color: #ffffff;
+  margin-bottom: 0;
+
+}
+
+h4 {
+  color: #ffffff;
+}
+
+p {
+  margin-left: 10px;
+}
+
+a {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #81b29a;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  background-color: #f2cc8f;
+}
+
+button a {
+  color: #3d405b;
+}
+
+.title {
+  background-image: url("wireframinglight.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.title a {
+  padding: 20px;
+  text-align: center;
+  background-color: #3d405b;
+  color: #ffffff;
+}
+
+.emailme {
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px;
+  margin: 5px;
+}
+
+.me {
+  float: right;
+  padding: 30px;
+}
+
+#aboutme {
+  background-color: #3d405b;
+  color: #ffffff;
+  height: max-content;
+  padding: 10px;
+}
+
+#projects, #experiments {
+  background-image: url("landscapearchutah.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+
+.container a {
+  color: #3d405b;
+}
+
+.container a:hover {
+  color: #81b29a;
+}
+
+.container {
+  background-color: #ffffff;
+  background-size: cover;
+  color: #3d405b;
+  box-sizing: border-box;
+  float: left;
+  width: 30%;
+  height: 500px;
+  margin: 1.65%;
+  border: 2px solid black;
+  padding: 5px 5px;
+  flex-direction: column;
+}
+
+#contactme {
+  background-color: #3d405b;
+  color: white;
+}
+
+#contactme button {
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  background-color: #e07a5f;
+  color: #ffffff;
+  padding: 10px;
+}
+
+footer nav {
+  display: inline-block;
+}
+
+footer li {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  margin: 5px;
+  width: 300px;
+}
+
+.icon, .hamburger {
+  display: none;
+}
+
+@media only screen and (max-width:700px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h4 {
+    color: #3d405b;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #projects {
+    background-image: none;
+  }
+
+  #experiments {
+    background-image: none;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #f2cc8f;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* color palette reference
+#f4f1de, #e07a5f, #3d405b, #81b29a, #f2cc8f;
+*/
