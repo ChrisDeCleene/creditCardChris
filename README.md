@@ -1,5 +1,5 @@
 # Chris DeCleene Portfolio
-> Welcome to my protfolio. I am a Full Stack Engineer and SEO Manager out of Denver, CO. In this site, you will find a working history of my completed and existing projects and experiments. I specialize in Javascript, SQL, PHP, and SEO.
+> Welcome to my portfolio. I am a Full Stack Engineer and SEO Manager out of Denver, CO. In this site, you will find a working history of my completed and existing projects and experiments. I specialize in Javascript, SQL, PHP, and SEO.
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
