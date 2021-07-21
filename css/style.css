@@ -138,7 +138,7 @@ button a {
 
 .me {
   float: right;
-  padding: 30px;
+  padding: 20px;
 }
 
 #aboutme {
@@ -215,6 +215,13 @@ footer li {
 
   h4 {
     color: #3d405b;
+  }
+
+  .me {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 
   .container {
