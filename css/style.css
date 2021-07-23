@@ -139,6 +139,7 @@ button a {
 .me {
   float: right;
   padding: 20px;
+  border-radius: 100%;
 }
 
 #aboutme {
