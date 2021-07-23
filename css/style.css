@@ -1,6 +1,8 @@
 /* Styling for Hamburger Menu */
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 li {
@@ -70,8 +72,9 @@ body {
 h1 {
 
   color: #3d405b;
-  font-size: 100px;
+  font-size: 80px;
   text-align: center;
+  margin: 40px 5px;
 }
 
 h2 {
@@ -87,7 +90,8 @@ h4 {
 }
 
 p {
-  margin-left: 10px;
+  padding: 5px;
+  font-family: Helvetica, sans-serif;
 }
 
 a {
@@ -146,7 +150,6 @@ button a {
   background-color: #3d405b;
   color: #ffffff;
   height: max-content;
-  padding: 10px;
 }
 
 #projects, #experiments {
@@ -178,6 +181,10 @@ button a {
   flex-direction: column;
 }
 
+.container p {
+  overflow: auto;
+}
+
 #contactme {
   background-color: #3d405b;
   color: white;
@@ -202,7 +209,7 @@ footer li {
   display: inline-block;
   border: 1px solid #ffffff;
   margin: 5px;
-  width: 300px;
+  width: 250px;
 }
 
 .icon, .hamburger {
@@ -210,6 +217,12 @@ footer li {
 }
 
 @media only screen and (max-width:1148px) {
+  .container {
+    height: max-content;
+    width: 100%;
+    margin-left: 0;
+  }
+  
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -267,11 +280,6 @@ footer li {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-  }
-
-  .container {
-    width: 100%;
-    margin-left: 0;
   }
 
   #projects {
