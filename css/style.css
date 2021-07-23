@@ -209,35 +209,7 @@ footer li {
   display: none;
 }
 
-@media only screen and (max-width:700px) {
-  h1 {
-    font-size: 42px;
-  }
-
-  h4 {
-    color: #3d405b;
-  }
-
-  .me {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-
-  .container {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  #projects {
-    background-image: none;
-  }
-
-  #experiments {
-    background-image: none;
-  }
-
+@media only screen and (max-width:1148px) {
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -278,6 +250,38 @@ footer li {
       -webkit-transform: translateY(-8px) rotate(-45deg);
       transform: translateY(-8px) rotate(-45deg);
   }
+
+}
+
+@media only screen and (max-width:700px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h4 {
+    color: #3d405b;
+  }
+
+  .me {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #projects {
+    background-image: none;
+  }
+
+  #experiments {
+    background-image: none;
+  }
+
 }
 
 /* color palette reference
