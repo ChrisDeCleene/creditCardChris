@@ -16,6 +16,10 @@ a {
 .header{
   border-bottom: 1px solid #ffffff;
   background-color: #3d405b;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
 }
 
 .navbar {
@@ -67,6 +71,12 @@ body {
   background-color: #f4f1de;
   font-size: 18px;
 
+}
+
+main{
+  position: relative;
+  top: 100px;
+  padding-bottom: 75px;
 }
 
 h1 {
