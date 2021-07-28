@@ -225,6 +225,7 @@ h1.easterEgg{
 
 footer {
   position: absolute;
+  width: 100%;
   text-align: center;
   background-color: #e07a5f;
   color: #ffffff;
