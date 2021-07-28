@@ -204,6 +204,25 @@ button a {
   text-align: left;
 }
 
+.easterEgg{
+  background-color: #000;
+  color: #fff;
+}
+
+.easterEgg:hover{
+  color: #a5a5a5;
+  text-decoration: none;
+}
+
+h1.easterEgg{
+  background-color: transparent;
+  color: #000;
+}
+
+#contactme .easterEgg{
+  background-color: none;
+}
+
 footer {
   position: absolute;
   text-align: center;
