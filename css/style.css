@@ -1,9 +1,37 @@
-/* Styling for Hamburger Menu */
-* {
+:root{
+  /* Dark Palette */
+    --black: #000000ff;
+    --eerie-black: #1C1C1Cff;
+    --jet: #393939ff;
+    --davys-grey: #555555ff;
+    --sonic-silver: #717171ff;
+  /* Light Palette */
+    --spanish-gray: #8E8E8Eff;
+    --silver-chalice: #AAAAAAff;
+    --silver: #C6C6C6ff;
+    --platinum: #E3E3E3ff;
+    --white: #ffffff;
+  /* Colorful Palette */
+    --eggshell: #f4f1deff;
+    --terra-cotta: #e07a5fff;
+    --independence: #3d405bff;
+    --green-sheen: #81b29aff;
+    --deep-champagne: #f2cc8fff;
+}
+
+/*******************************************************************
+  RESET SECTION:
+*******************************************************************/
+*{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
+
+/*******************************************************************
+  DYNAMIC SECTION
+*******************************************************************/
 
 li {
   list-style: none;
@@ -14,8 +42,8 @@ a {
 }
 
 .header{
-  border-bottom: 1px solid #ffffff;
-  background-color: #3d405b;
+  border-bottom: 1px solid var(--white);
+  background-color: var(--independence);
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -40,7 +68,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .nav-menu {
@@ -56,11 +84,11 @@ a {
 .nav-link{
   font-size: 1.6rem;
   font-weight: 400;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .nav-link:hover{
-  color: #81b29a;
+  color: var(--green-sheen);
 }
 
 
@@ -68,7 +96,7 @@ a {
 /* Start of original styling */
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: #f4f1de;
+  background-color: var(--eggshell);
   font-size: 18px;
 
 }
@@ -81,7 +109,7 @@ main{
 
 h1 {
 
-  color: #3d405b;
+  color: var(--independence);
   font-size: 80px;
   text-align: center;
   margin: 40px 5px;
@@ -89,14 +117,14 @@ h1 {
 
 h2 {
   padding: 10px;
-  background-color: #e07a5f;
-  color: #ffffff;
+  background-color: var(--terra-cotta);
+  color: var(--white);
   margin-bottom: 0;
 
 }
 
 h4 {
-  color: #ffffff;
+  color: var(--white);
 }
 
 p {
@@ -105,25 +133,23 @@ p {
 }
 
 a {
-  color: #ffffff;
+  color: var(--white);
   cursor: pointer;
 }
 
 a:hover {
-  color: #81b29a;
+  color: var(--green-sheen);
   cursor: pointer;
   text-decoration: underline;
-  text-decoration-color: #ffffff;
+  text-decoration-color: var(--white);
 }
 
 button {
-  padding: 10px;
-  margin: 10px;
-  background-color: #f2cc8f;
-}
-
-button a {
-  color: #3d405b;
+  padding: 20px 30px;
+  margin: 0 auto;
+  background-color: var(--black);
+  color: var(--black);
+  font-size: 18px;
 }
 
 .title {
@@ -138,14 +164,14 @@ button a {
 .title a {
   padding: 20px;
   text-align: center;
-  background-color: #3d405b;
-  color: #ffffff;
+  background-color: var(--independence);
+  color: var(--white);
 }
 
 .emailme {
-  border: 1px solid #000000;
-  background-color: #ffffff;
-  color: #000000;
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  color: var(--black);
   padding: 5px;
   margin: 5px;
 }
@@ -157,8 +183,8 @@ button a {
 }
 
 #aboutme {
-  background-color: #3d405b;
-  color: #ffffff;
+  background-color: var(--independence);
+  color: var(--white);
   height: max-content;
 }
 
@@ -170,17 +196,17 @@ button a {
 
 
 .container a {
-  color: #3d405b;
+  color: var(--independence);
 }
 
 .container a:hover {
-  color: #81b29a;
+  color: var(--green-sheen);
 }
 
 .container {
-  background-color: #ffffff;
+  background-color: var(--white);
   background-size: cover;
-  color: #3d405b;
+  color: var(--independence);
   box-sizing: border-box;
   float: left;
   width: 30%;
@@ -195,9 +221,14 @@ button a {
   overflow: auto;
 }
 
+.banner{
+  background-color: var(--davys-grey);
+  color: var(--white);
+}
+
 #contactme {
-  background-color: #3d405b;
-  color: white;
+  background-color: var(--independence);
+  color: var(--white);
 }
 
 #contactme button {
@@ -205,18 +236,18 @@ button a {
 }
 
 .easterEgg{
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .easterEgg:hover{
-  color: #a5a5a5;
+  color: var(--spanish-gray);
   text-decoration: none;
 }
 
 h1.easterEgg{
   background-color: transparent;
-  color: #000;
+  color: var(--black);
 }
 
 #contactme .easterEgg{
@@ -227,8 +258,8 @@ footer {
   position: absolute;
   width: 100%;
   text-align: center;
-  background-color: #e07a5f;
-  color: #ffffff;
+  background-color: var(--terra-cotta);
+  color: var(--white);
   padding: 10px;
 }
 
@@ -238,7 +269,7 @@ footer nav {
 
 footer li {
   display: inline-block;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   margin: 5px;
   width: 250px;
 }
@@ -259,7 +290,7 @@ footer li {
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #f2cc8f;
+    background-color: var(--deep-champagne);
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -303,7 +334,7 @@ footer li {
   }
 
   h4 {
-    color: #3d405b;
+    color: var(--independence);
   }
 
   .me {
@@ -322,7 +353,3 @@ footer li {
   }
 
 }
-
-/* color palette reference
-#f4f1de, #e07a5f, #3d405b, #81b29a, #f2cc8f;
-*/
