@@ -33,6 +33,13 @@
   DYNAMIC SECTION
 *******************************************************************/
 
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: var(--eggshell);
+  font-size: 18px;
+
+}
+
 li {
   list-style: none;
 }
@@ -40,6 +47,10 @@ li {
 a {
   text-decoration: none;
 }
+
+/*******************************************************************
+  HEADER SECTION
+*******************************************************************/
 
 .header{
   border-bottom: 1px solid var(--white);
@@ -91,20 +102,12 @@ a {
   color: var(--green-sheen);
 }
 
-
-
-/* Start of original styling */
-body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: var(--eggshell);
-  font-size: 18px;
-
-}
-
+/*******************************************************************
+  MAIN SECTION
+*******************************************************************/
 main{
   position: relative;
-  top: 100px;
-  padding-bottom: 75px;
+  padding-top: 100px;
 }
 
 h1 {
@@ -117,7 +120,7 @@ h1 {
 
 h2 {
   padding: 10px;
-  background-color: var(--terra-cotta);
+  background-color: var(--green-sheen);
   color: var(--white);
   margin-bottom: 0;
 
@@ -147,24 +150,42 @@ a:hover {
 button {
   padding: 20px 30px;
   margin: 0 auto;
-  background-color: var(--black);
-  color: var(--black);
+  background-color: var(--sonic-silver);
+  color: var(--white);
   font-size: 18px;
 }
 
 .title {
   background-image: url("wireframinglightsmall.jpg");
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
 
-.title a {
+.construction {
+  background-image: url("constructionsitedark.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.construction h1{
+  color: var(--white);
+}
+
+.construction container {
   padding: 20px;
   text-align: center;
-  background-color: var(--independence);
+  background-color: var();
   color: var(--white);
 }
 
@@ -185,15 +206,42 @@ button {
 #aboutme {
   background-color: var(--independence);
   color: var(--white);
-  height: max-content;
 }
 
-#projects, #experiments {
-  background-image: url("landscapearchutah.jpg");
-  background-position: center;
-  background-size: cover;
+#aboutme p{
+  line-height: 1.4em;
+  padding: 10px 30px;
 }
 
+#projectexamples {
+  height: 100%;
+  overflow: auto;
+}
+
+.three-columns{
+  background-color: var(--white);
+  min-height: 350px;
+  margin: 30px auto;
+}
+
+.column{
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+  width: 30%;
+  margin: 1.65%;
+  padding: 50px 10px;
+  flex-direction: column;
+  color: var(--black);
+}
+
+.column h3 a{
+  color: var(--black);
+}
+
+.column p{
+  color: var(--black);
+}
 
 .container a {
   color: var(--independence);
@@ -219,20 +267,19 @@ button {
 
 .container p {
   overflow: auto;
+  color: var(--black);
+  padding: 10px;
 }
 
-.banner{
+.banner {
   background-color: var(--davys-grey);
-  color: var(--white);
+  padding: 30px;
+  margin: 50px auto;
 }
 
-#contactme {
-  background-color: var(--independence);
+.banner h2, p{
   color: var(--white);
-}
-
-#contactme button {
-  text-align: left;
+  padding: 30px;
 }
 
 .easterEgg{
@@ -240,19 +287,28 @@ button {
   color: var(--white);
 }
 
-.easterEgg:hover{
-  color: var(--spanish-gray);
-  text-decoration: none;
+.easterEgg h1{
+  display: none;
 }
 
-h1.easterEgg{
-  background-color: transparent;
-  color: var(--black);
+.easterEgg .title a{
+  display: none;
 }
 
-#contactme .easterEgg{
-  background-color: none;
+.easterEgg .title{
+  background-image: url("castle.jpg");
+  opacity: .5;
 }
+
+
+.easterEgg #contactme{
+  background-color: var(--eerie-black);
+}
+
+footer.easterEgg{
+  background-color: var(--eerie-black);
+}
+
 
 footer {
   position: absolute;
@@ -261,17 +317,6 @@ footer {
   background-color: var(--terra-cotta);
   color: var(--white);
   padding: 10px;
-}
-
-footer nav {
-  display: inline-block;
-}
-
-footer li {
-  display: inline-block;
-  border: 1px solid var(--white);
-  margin: 5px;
-  width: 250px;
 }
 
 .icon, .hamburger {
@@ -283,6 +328,15 @@ footer li {
     height: max-content;
     width: 100%;
     margin-left: 0;
+  }
+
+  .three-columns{
+    margin: 50px auto;
+    height: 1000px;
+  }
+  .column{
+    height: max-content;
+    width: 100%;
   }
   
   .nav-menu {
