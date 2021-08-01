@@ -85,7 +85,7 @@ a {
 .nav-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 
 .nav-item {
@@ -111,7 +111,6 @@ main{
 }
 
 h1 {
-
   color: var(--independence);
   font-size: 80px;
   text-align: center;
@@ -161,8 +160,8 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 250px;
+  padding-bottom: 250px;
   text-align: center;
 }
 
@@ -172,7 +171,6 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -218,29 +216,23 @@ button {
   overflow: auto;
 }
 
-.three-columns{
+.call-outs{
   background-color: var(--white);
-  min-height: 350px;
-  margin: 30px auto;
+  display: flex;
 }
 
-.column{
-  box-sizing: border-box;
+.call-out{
   text-align: center;
-  float: left;
-  width: 30%;
-  margin: 1.65%;
-  padding: 50px 10px;
-  flex-direction: column;
+  color: var(--black);
+  padding: 50px;
+}
+
+.call-out h3 a, .call-out p{
   color: var(--black);
 }
 
-.column h3 a{
-  color: var(--black);
-}
-
-.column p{
-  color: var(--black);
+.call-out a:hover{
+  color: var(--green-sheen);
 }
 
 .container a {
@@ -273,13 +265,16 @@ button {
 
 .banner {
   background-color: var(--davys-grey);
-  padding: 30px;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
-.banner h2, p{
+.banner h2, .banner p{
   color: var(--white);
   padding: 30px;
+}
+
+.banner button{
+  margin: 20px;
 }
 
 .easterEgg{
@@ -330,13 +325,12 @@ footer {
     margin-left: 0;
   }
 
-  .three-columns{
-    margin: 50px auto;
-    height: 1000px;
+  .call-outs{
+    display: block;
   }
-  .column{
-    height: max-content;
-    width: 100%;
+  .call-out{
+    margin: 20px auto;
+    padding: 20px;
   }
   
   .nav-menu {
@@ -347,7 +341,6 @@ footer {
     background-color: var(--deep-champagne);
     width: 100%;
     border-radius: 10px;
-    text-align: center;
     transition: 0.3s;
     box-shadow:
         0 10px 27px rgba(0, 0, 0, 0.05);
@@ -384,7 +377,7 @@ footer {
 
 @media only screen and (max-width:700px) {
   h1 {
-    font-size: 42px;
+    font-size: 64px;
   }
 
   h4 {
