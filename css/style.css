@@ -326,7 +326,7 @@ footer {
   }
 
   .call-outs{
-    display: block;
+    flex-direction: column;
   }
   .call-out{
     margin: 20px auto;
